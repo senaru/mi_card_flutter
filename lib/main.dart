@@ -12,25 +12,11 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              Container(
-                height: 100,
-                width: 100,
-                color: Colors.white,
-                child: Text("Container 1"),
-              ),
-              Container(
-                width: 100,
-                height: 100,
-                color: Colors.blue,
-                child: Text("Container 2"),
-              ),
-              Container(
-                width: 100,
-                height: 100,
-                color: Colors.red,
-                child: Text("Container 3"),
+              CircleAvatar(
+                radius: 50,
+                backgroundImage: NetworkImage(
+                    "https://media-exp1.licdn.com/dms/image/C4D03AQEzwzO58o3gCw/profile-displayphoto-shrink_400_400/0?e=1600905600&v=beta&t=uZfW1aSQWQuDtHPsCcfHOsZBxdv0mwA7tkat9bSb5Vg"),
               ),
             ],
           ),
